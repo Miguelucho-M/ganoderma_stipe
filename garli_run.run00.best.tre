@@ -1,0 +1,33 @@
+#NEXUS
+
+begin trees;
+translate
+ 1 G_applanatum,
+ 2 G_sichuanense,
+ 3 G_sessile,
+ 4 G_parvulum,
+ 5 G_hoehnelianum,
+ 6 G_tropicum,
+ 7 A_calcigenum,
+ 8 G_philippii,
+ 9 G_martinicense,
+ 10 G_adspersum,
+ 11 G_tsugae,
+ 12 G_brownii,
+ 13 G_resinaceum,
+ 14 G_curtisii,
+ 15 A_rugosum,
+ 16 G_ellipsoideum,
+ 17 G_weberianum,
+ 18 G_australe,
+ 19 G_lucidum,
+ 20 G_multiplicatum,
+ 21 G_sinense,
+ 22 G_multipileum;
+tree bestREP1 = [&U][!GarliScore -11274.759593][!GarliModel  M1 r  1.05930 4.24540 1.42596 1.04735 4.41299 1.00000 e 0.21915 0.27008 0.25616 0.25461 a 0.90556 p 0.50522 ]((((20:0.03112788,6:0.03348389):0.00110078,(8:0.04093470,(22:0.08698959,9:0.00845921):0.01733895):0.05219694):0.02098564,(14:0.03286543,11:0.09186786):0.03920810):0.00804482,((7:0.11826406,15:0.16404749):0.09694951,(1:0.07136871,(21:0.07228350,(16:0.04993229,(12:0.06467348,(18:0.03591681,10:0.01100466):0.03245077):0.02949020):0.03480215):0.01204496):0.01393540):0.02389719,((3:0.01516646,(13:0.01067145,19:0.03434638):0.02043976):0.03459961,(4:0.12893961,((17:0.00472273,2:0.02551731):0.02033521,5:0.02531174):0.01364744):0.03916212):0.02167284);
+end;
+begin paup;
+clear;
+gett file=garli_run.run00.best.tre storebr;
+lset userbr nst=6 rmat=(1.059299 4.245398 1.425960 1.047353 4.412986) base=( 0.219152 0.270080 0.256160) rates=gamma shape=0.905564 ncat=4 pinv=0.505221;
+end;
